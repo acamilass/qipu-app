@@ -139,4 +139,82 @@ i {
 .task .btn-check, .task .btn-clear {
   margin: 0;
 }
+
+@media only screen and (max-width: 520px) {
+  label {
+    font-size: 0.6rem;
+  }
+  .task .btn-group {
+    left: 58vmin;
+  }
+  .task .task-create .task-create-input {
+    margin-left: 10px;
+  }
+  .task .task-list {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  label {
+    font-size: 0.6rem;
+  }
+  .task .btn-group {
+    left: 55vmin;
+  }
+  .task .task-create .task-create-input {
+    margin-left: 10px;
+  }
+  .task .task-list {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .task {
+    margin-left: 5px;
+  }
+  .task .btn-group {
+    left: 52vmin;
+  }
+  .task .task-filter {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 10px;
+  }
+  .task .task-filter .task-filter-search {
+    width: 46%;
+  }
+  .task .task-list {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .task .btn-group {
+    left: 50vmin;
+  }
+  .task .task-filter .task-filter-search {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .task .btn-group {
+    left: 48vmin;
+  }
+  .task .task-filter .task-filter-search {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .task .btn-group {
+    left: 46vmin;
+  }
+  .task .task-filter .task-filter-search {
+    width: 20%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

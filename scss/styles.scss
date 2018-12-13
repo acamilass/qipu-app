@@ -127,3 +127,115 @@ i {
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 520px) {
+    label {
+        font-size: 0.6rem;
+    }
+   
+    .task {
+       .btn-group {
+           left: 58vmin;
+       }
+
+       .task-create {
+            .task-create-input {
+                margin-left: 10px;
+            }
+        }
+
+        .task-list {
+            margin-left: 10px;
+        }
+    }
+       
+}
+   
+@media only screen and (max-width: 490px) {
+    label {
+        font-size: 0.6rem;
+    }
+      
+    .task {
+        .btn-group {
+            left: 55vmin;
+        }
+
+        .task-create {
+            .task-create-input {
+                margin-left: 10px;
+            }
+        }
+
+        .task-list {
+            margin-left: 10px;
+        }
+    }
+            
+}
+      
+   
+@media only screen and (max-width: 420px) {
+    .task {   
+        margin-left: 5px;
+   
+        .btn-group {
+            left: 52vmin;
+        }
+   
+        .task-filter {
+            justify-content: left;
+            margin-left: 10px;
+        
+            .task-filter-search {
+                width: 46%;
+            }
+        }
+
+        .task-list {
+            margin-left: 10px;
+        }
+    }
+}
+   
+   
+@media only screen and (max-width: 390px) {
+    .task {
+        .btn-group {
+            left: 50vmin;
+        }
+   
+        .task-filter {
+            .task-filter-search {
+                width: 40%;
+            }
+        }
+    }
+}
+   
+@media only screen and (max-width: 360px) {
+    .task {   
+        .btn-group {
+            left: 48vmin;
+        }
+        .task-filter {
+            .task-filter-search {
+                width: 30%;
+            }
+        }
+    }
+}
+   
+@media only screen and (max-width: 300px) {
+    .task {   
+        .btn-group {
+            left: 46vmin;
+        }
+        .task-filter {  
+            .task-filter-search {
+                width: 20%;
+            }
+        }
+    }
+}
+
