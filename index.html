@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>My ToDo List</title>
+        <meta charset="utf-8">
+        <link href="scss/styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="task">
+
+            <h1 class="task-title">My ToDo List</h1>
+
+            <h3 class="task-title">Create Task</h3>
+
+            <!-- SECTION TO CREATE A NEW TASK AND ADD TO LIST -->
+            <div class="task-create">
+                <input class="task-create-input" type="text" id="new-task">
+                <button class="task-create-btn" onclick="addTask()">
+                    <i class="material-icons">add_circle_outline</i>
+                </button>
+            </div>
+
+            <!-- SECTION TO SEARCH AND FILTER TASKS (ACTIVE OR DONE) -->
+            <div class="task-filter">
+                <p class="task-filter__title">Filter: </p>
+                <button class="task btn-active active">Active</button>
+                <button class="task btn-done">Done</button>
+                <p class="task-filter__title">Search: </p>
+                <input id="filter" class="task-filter-search" type="text">
+            </div>
+
+            <!-- SECTION TO LIST ALL TASKS -->
+            <div class="task-list">
+                <h3>Tasks</h3>
+                <ul id="taskList">
+
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
