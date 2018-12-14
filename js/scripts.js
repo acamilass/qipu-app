@@ -42,14 +42,12 @@ console.log(tasks.todo);
 highlight();
 filterListEvent();
 
-
-
 function getTodoList() {
     return tasks.todoList;
 }
 
 /**
- * Seta lista de acordo com seu filtro
+ * Set list using the filter
  * @param {Array} todo
  * @param {boolean} filter 
  */
@@ -71,7 +69,7 @@ function setTodoList(filter) {
 
 
 /**
- * carrega lista
+ * Loads list
  */
 function loadList() {
     var lists = document.getElementById("taskList");
@@ -85,7 +83,7 @@ function loadList() {
 }
 
 /**
- * filtrar por titulo
+ * Filter by title
  * @param {string} title 
  */
 function filterByTitle(title) {
@@ -124,7 +122,9 @@ function filterListEvent() {
     };
 }
 
-// active link
+/**
+ * Active link
+*/
 function highlight() {
     var filter = document.querySelector(".task-filter");
     var btns = filter.querySelectorAll(".task-filter button");
@@ -154,7 +154,9 @@ function highlight() {
 }
 
 
-
+/**
+ * Add a task to array
+*/
 function addTask() {
 
     var newTask = document.getElementById("newTask");
@@ -182,9 +184,9 @@ function addTask() {
 }
 
 /**
- * 
+ * Mark tasks as done
  * @param {HTMLElement} element 
- */
+*/
 function completed(element) {
 
     var task = element.currentTarget.parentNode.parentNode;
@@ -192,10 +194,9 @@ function completed(element) {
 
     var index = findIndexByID(todo, taskID);
 
-
-
-    // se tarefa estiver com status 'done = false'
-    // modificar para true
+    /**
+     * If 'done = false' then change to 'done = true'
+    */
     if (index !== -1) {
         if (!tasks.todo[index].done) {
             var taskLsit = document.querySelector('#taskList');
@@ -212,9 +213,9 @@ function completed(element) {
 }
 
 /**
- * remove item da lista
+ * Delete task from list
  * @param {HTMLElement} element 
- */
+*/
 function remove(element) {
 
     var taskLsit = document.querySelector('#taskList');
@@ -230,7 +231,7 @@ function remove(element) {
  * New item template
  * @param {string} value 
  * @param {string} id
- */
+*/
 function newItemtemplate(value, id) {
 
     var listItem = document.createElement("li");
@@ -242,10 +243,7 @@ function newItemtemplate(value, id) {
         '<div class="task btn-group">' +
         '<button onclick="completed(event)" class="task btn-check">' +
         '<i class="material-icons">check</i>' +
-        // '</button>' +
-        // '<button class="btn-create">' +
-        //     '<i class="material-icons">create</i>' +
-        // '</button>' +
+        '</button>' +
         '<button onclick="remove(event)" class="task btn-clear">' +
         '<i class="material-icons">clear</i>' +
         '</button>' +
@@ -255,7 +253,7 @@ function newItemtemplate(value, id) {
 }
 
 /**
- * return index value
+ * Return index value
  * @param {Array} todo 
  * @param {string} taskID
  */
